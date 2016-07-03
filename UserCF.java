@@ -20,18 +20,13 @@ import org.apache.mahout.cf.taste.impl.common.LongPrimitiveIterator;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 
 
-
-/**
- * Created by aaron on 16-7-2.
- */
-
 public class UserCF {
 
     final static int NEIGHBORHOOD_NUM = 2;
     final static int RECOMMENDER_NUM = 3;
 
     public static void main(String[] args) throws IOException, TasteException {
-        String file = "/home/aaron/workspace/mydata/test.txt";
+        String file = "";
         DataModel model = new FileDataModel(new File(file));
         UserSimilarity user = new EuclideanDistanceSimilarity(model);
         NearestNUserNeighborhood neighbor = new NearestNUserNeighborhood(NEIGHBORHOOD_NUM, user, model);
