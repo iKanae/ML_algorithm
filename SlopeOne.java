@@ -26,7 +26,7 @@ import org.apache.mahout.cf.taste.impl.recommender.slopeone.SlopeOneRecommender;
 
 public class SlopeOne {
     public static void main(String[] args) throws IOException, TasteException {
-        String file = "/home/aaron/workspace/mydata/test.txt";
+        String file = "";
         DataModel model = new FileDataModel(new File(file));
         DiffStorage diffStorage=new MemoryDiffStorage(model,Weighting.UNWEIGHTED,Long.MAX_VALUE);
         Recommender r=new SlopeOneRecommender(model,Weighting.UNWEIGHTED,Weighting.UNWEIGHTED,diffStorage);
