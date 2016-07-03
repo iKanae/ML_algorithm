@@ -23,9 +23,7 @@ import org.apache.mahout.cf.taste.impl.common.LongPrimitiveIterator;
 import org.apache.mahout.cf.taste.impl.model.file.FileDataModel;
 import org.apache.mahout.cf.taste.impl.recommender.slopeone.MemoryDiffStorage;
 import org.apache.mahout.cf.taste.impl.recommender.slopeone.SlopeOneRecommender;
-/**
- * Created by aaron on 16-7-3.
- */
+
 public class SlopeOne {
     public static void main(String[] args) throws IOException, TasteException {
         String file = "/home/aaron/workspace/mydata/test.txt";
